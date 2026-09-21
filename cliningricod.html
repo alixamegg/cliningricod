@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>piket kelas x-2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-350 grid grid-cols-1 justify-center font-sans">
+    <header class="bg-pink-200 w-full p-4 shadow-md mb-8">
+        <div class="mx-auto px-4 py-2 flex-justify-center items-center">
+            <h1 class="text-2xl font-bold">jadwal pikett</h1>
+       <nav>
+        <ul class="flex space-x-4 justify-end">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="schedule.html" class="hover:under">Schedule</a></li>
+        </ul>
+      </nav>  
+    </header>
+    <main class="max-w-4xl mx-auto px-4 py-8 bg-pink-400 rounded-lg shadow-md">
+        <section>
+            <form>
+                <label for="date" class="text-xs font-semibold">Date:</label>
+                <input type="date" id="date" name="date" class="w-full px-3 py-2 text-xs bg-pink-300 text-white rounded border border-pink-900/80 
+                            focus:outline-none focus: border-pink-600 placeholder-pink-400" required><br><br>  
+
+                <label for="classroom" class="text-xs font-semibold">Classroom:</label>
+                <select>
+                    <option value="class1" class="font-medium bg-pink-300">x-1</option>
+                    <option value="class2" class="font-medium bg-pink-300">x-2</option>
+                    <option value="class1" class="font-medium bg-pink-300">XI-1</option>
+                    <option value="class2" class="font-medium bg-pink-300">XI-2</option>
+                </select>
+                <label for="cleaner" class="text-xs font-semibold">Cleaner:</label>
+                <input type="text" id="cleaner" name="cleaner" class="w-full px-3 py-2 text-xs bg-pink-300 text-white rounded border border-pink-900/80 
+                            focus:outline-none focus: border-pink-600 placeholder-pink-400" required><br><br>        
+
+                <label for="status" class="text-xs font-semibold">Task that has been completed:</label>
+                <textarea id="status" name="status" placeholder="Please describe the task that has been completed..." class="w-full px-3 py-2 text-xs bg-pink-300 text-white rounded border border-pink-900/80 
+                            focus:outline-none focus: border-pink-600 placeholder-pink-400" required></textarea><br><br>
+                <button type="submit" class="px-5 py-2 bg-pink-400 border border-pink-100 rounded-md text-xs font-medium hover:bg-rose-500 transition-colors shadow">Submit Record</button>   
+            </form>
+        </section>
+    </main>
+    <footer>
+<p class="text-center text-gray-600 p-4">© 2026 Classroom Cleaning Record. All rights reserved.</p>
+    </footer>
+</body>
+</html>

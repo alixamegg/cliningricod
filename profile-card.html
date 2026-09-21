@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-200 min-h-screen flex items-center justify-center p-4 font-sans">
+     <!-- div for card -->
+      <div class="w-full max-w-sm bg-pink-200 rounded-2xl shadow-2xl overflow-hidden">
+        <!-- div for ava / header -->
+         <div class="bg-pink-300 pt-8 pb-6 flex justify-center">
+
+            <!-- div for profile picture -->
+
+             <div class="relative w-32 h-32 rounded-full border-4 border-pink-300 overflow-hidden shadow-inner">
+                 <!-- profile picture -->
+                <img src="Screenshot 2026-08-20 065239.png" alt="profile picture" class="w-full h-full object-cover"/>
+             </div>
+         </div>
+     
+         
+         <!-- Profile information -->
+         <div class="p-6 text-center text-gray-900 space-y-4">
+             <!-- name section -->
+              <div>
+                <h2 class="text-xl font-bold tracking-wide">alaixa kurnia mega p</h2>
+              <div class="flex items-center justify-center gap-1 text-xs text-pink-300 mt-1">
+              <p class="uppercase tracking-wider text-black font-semibold">SMA ABBS BOYOLALI</p>
+              </div>
+              <p class="text-sm text-gray-600 mt-2 font-light">I am a 10th Grade Student</p>
+         </div>
+
+
+            <!-- div for contact information -->
+        <div class="flex justify-center gap-3 mt-2">
+            <a class="px-5 py-2 bg-pink-500 border border-pink-500 rounded-md fond-xs font-medium hover:bg-pink-900 transition-colors shadow" href="https://github.com/alaixakurniamega" target="_blank">Github</a>
+            <a class="px-5 py-2 bg-pink-500 border border-pink-500 rounded-md fond-xs font-medium hover:bg-pink-900 transition-colors shadow" href="https://www.instagram.com/lexaaaa661/"target="_blank">Instagram</a>
+            <a class="px-5 py-2 bg-pink-500 border border-pink-500 rounded-md fond-xs font-medium hover:bg-pink-900 transition-colors shadow" href="https://www.tiktok.com/xaawhitespace/" target="_blank">TikTok</a>
+        </div>
+
+          <!--horizontal rule -->
+        <hr class="border-indigo-900/90 my-4">
+
+        <!-- div for SKILLS area -->
+        <div class="text-left">
+            <h3 class="text-xs font-bold tracking-wider text-pink-200 mb-2">Skills</h3>
+            <div class="grid grid-cols-3 gap-2 text-xs text-gray-900">
+                <span class="border border-pink-300 bg-pink-100 text-black py-1 px-2 rounded-md text-sm font-medium">HTML</span>
+                <span class="border border-pink-300 bg-pink-100 text-black py-1 px-2 rounded-md text-sm font-medium">CSS</span>
+                <span class="border border-pink-300 bg-pink-100 text-black py-1 px-2 rounded-md text-sm font-medium">JavaScript</span>
+             </div>
+        </div>
+
+         <hr class="border-indigo-900/90 my-4">
+    
+      <!-- div for formulir 'SEND MESSAGE' -->
+       <div class="text-left pt-4">
+             <h3 class="text-xs font-bold tracking-wider text-pink-200 mb-2">SEND MESSAGE</h3>    
+             <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="text-xs font-semibold">Name:</label>
+                    <input type="text" id="name" name="name" class="w-full px-3 py-2 text-xs bg-pink-100 text-black rounded border border-pink-300/50 focus:outline-none focus:border-pink-500 placeholder-black focus:ring-2 focus:ring-pink-500" required placeholder="your name">
+                </div>
+                <div>
+                    <label for="email" class="text-xs font-semibold">Email:</label>
+                    <input type="email" id="email" name="email" class="w-full px-3 py-2 text-xs bg-pink-100 text-black rounded border border-pink-300/50 focus:outline-none focus:border-pink-500 placeholder-black focus:ring-2 focus:ring-pink-500" required placeholder="your email">
+                </div>
+                <div>
+                    <label for="message" class="text-xs font-semibold">Message:</label>
+                    <textarea id="message" name="message" class="w-full px-3 py-2 text-xs bg-pink-100 text-black rounded border border-pink-300/50 focus:outline-none focus:border-pink-500 placeholder-black focus:ring-2 focus:ring-pink-500" placeholder="your message" required></textarea>
+                </div>
+                <button type="submit" class="px-4 py-2 bg-pink-400 hover:bg-pink-600 text-black font-medium text-xs rounded transition-colors shadow">Send</button>
+        </div>
+
+    </div>
+
+      
+     </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weekly Schedule</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Animasi judul */
+        .judul {
+            animation: gerak 2s ease-in-out infinite;
+        }
+
+        @keyframes gerak {
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-pink-100 min-h-screen flex items-center justify-center p-5">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-xl p-6">
+
+        <!-- Judul -->
+        <h1 class="judul text-3xl font-bold text-pink-600 text-center mb-6 animation">
+            📚 Weekly Schedule
+        </h1>
+
+        <!-- Tabel -->
+        <div class="overflow-x-auto">
+
+            <table class="w-full border-collapse text-center">
+
+                <!-- Header -->
+                <thead>
+                    <tr class="bg-pink-500 text-white">
+                        <th class="p-3 border border-pink-300">Monday</th>
+                        <th class="p-3 border border-pink-300">Tuesday</th>
+                        <th class="p-3 border border-pink-300">Wednesday</th>
+                        <th class="p-3 border border-pink-300">Thursday</th>
+                        <th class="p-3 border border-pink-300">Friday</th>
+                    </tr>
+                </thead>
+
+                <!-- Isi -->
+                <tbody class="text-center animate-bounce>
+
+                    <tr class="bg-pink-50 font-semibold transition duration-300">
+                        <td class="p-3 border border-pink-200">Mega</td>
+                        <td class="p-3 border border-pink-200">Mega</td>
+                        <td class="p-3 border border-pink-200">Mega</td>
+                        <td class="p-3 border border-pink-200">Mega</td>
+                        <td class="p-3 border border-pink-200">Mega</td>
+                    </tr>
+
+                    <tr>
+                        <td class="p-3 border border-pink-200">School</td>
+                        <td class="p-3 border border-pink-200">Mega Mega</td>
+                        <td class="p-3 border border-pink-200">Study</td>
+                        <td class="p-3 border border-pink-200">School</td>
+                        <td class="p-3 border border-pink-200">Relax</td>
+                    </tr>
+
+                    <tr class="bg-pink-50">
+                        <td class="p-3 border border-pink-200">Study</td>
+                        <td class="p-3 border border-pink-200">Homework</td>
+                        <td class="p-3 border border-pink-200">Coding</td>
+                        <td class="p-3 border border-pink-200">Reading</td>
+                        <td class="p-3 border border-pink-200">Free Time</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+            <h3 class="text-center mt-6">
+    <a href="cliningricod.html"
+       class="inline-block bg-pink-500 text-white px-5 py-2 rounded-full hover:bg-pink-600 hover:scale-105 transition duration-300 shadow-md">
+        ← Back to Home
+    </a>
+</h3>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

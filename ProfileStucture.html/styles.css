@@ -1,0 +1,29 @@
+body {
+    font-family: 'Arial', sans-serif;
+    beckground-color: #f9f9f9;
+    color: #333;
+
+}
+
+profile-container{
+    width: 458px;
+    margin: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 5px solid #f9f9f9;  
+    border-radius: 8px;
+    
+    ;
+}
+h1{
+    text-align: center;
+    color: #333;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
