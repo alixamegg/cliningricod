@@ -1,10 +1,85 @@
+```html
 <!DOCTYPE html>
 <html>
- <head>
-      <meta charset="UTF-8">
-      <meta name="viewport"contact>
-      <title>  my profil </title>
+<head>
+    <title>Form Sederhana</title>
 
-        <script>
-            
-        </script> </head>    
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-pink-100 p-8">
+
+    <div class="bg-white p-6 rounded-lg max-w-md mx-auto">
+
+        <h1 class="text-2xl font-bold text-pink-600 text-center mb-6">
+            Form Data Diri
+        </h1>
+
+        <form>
+
+            <!-- Nama -->
+            <label class="text-pink-700 font-semibold">Nama:</label>
+            <input type="text" value="Mega Alaxa"
+                class="border border-pink-300 p-2 rounded w-full">
+
+            <br>
+
+            <!-- Email -->
+            <label class="text-pink-700 font-semibold">Email:</label>
+            <input type="email" value="mega@gmail.com"
+                class="border border-pink-300 p-2 rounded w-full">
+
+            <br>
+
+            <!-- Tanggal -->
+            <label class="text-pink-700 font-semibold">Tanggal lahir:</label>
+            <input type="date" value="2011-05-10"
+                class="border border-pink-300 p-2 rounded w-full">
+
+            <br>
+
+            <!-- Radio button -->
+            <label class="text-pink-700 font-semibold">Jenis kelamin:</label>
+
+            <div class="mt-2">
+                <input type="radio" name="gender" checked>
+                Laki-laki
+
+                <input type="radio" name="gender" class="ml-4">
+                Perempuan
+            </div>
+
+            <br>
+
+            <!-- Pilihan -->
+            <label class="text-pink-700 font-semibold">Kelas:</label>
+
+            <select class="border border-pink-300 p-2 rounded w-full">
+                <option>X</option>
+                <option>XI</option>
+                <option>XII</option>
+            </select>
+
+            <br>
+
+            <!-- Textarea -->
+            <label class="text-pink-700 font-semibold">Pesan:</label>
+
+            <textarea rows="4" cols="30"
+                class="border border-pink-300 p-2 rounded w-full">Halo, saya sedang belajar HTML.</textarea>
+
+            <br><br>
+
+            <!-- Button -->
+            <button class="bg-pink-500 text-white px-5 py-2 rounded hover:bg-pink-600">
+                Kirim
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
+```
